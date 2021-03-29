@@ -17,16 +17,16 @@ module.exports = function transform(arr) {
         i++;
         break;
       case (dNext):
-        if (i+1 < arr.length) res.push(arr[i+1]);
+        if (i+1 < arr.length) res.push(arr[i+1])
         break;
       case (disPrev):
-        if (notDiscard(arr, i-2)) res.pop();
+        if (notDiscard(arr, i-2)) res.pop()
         break;
       case (dPrev):
-        if (notDiscard(arr, i-2)) res.push(arr[i-1]);
+        if (notDiscard(arr, i-2)) res.push(arr[i-1])
         break;
       default:
-        res.push(arr[i]);
+        res.push(arr[i])
     }
   }
 
